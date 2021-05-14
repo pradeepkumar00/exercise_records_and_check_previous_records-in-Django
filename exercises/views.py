@@ -236,5 +236,8 @@ def new(request):
                         m = str(y) + '  ' + str(m) + '  ' + item.date + '  ' + s
                         list.append(m)
         param = {'list': list,'name': user_name, 'age': user_age, 'wt': user_weight}
+        user_name =''
+        user_age=''
+        user_weight=''
         return render(request, 'new.html', param)
     return render(request,'get_pr.html')
